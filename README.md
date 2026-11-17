@@ -19,6 +19,13 @@ baseline preserves the full official upstream asset catalog as vendor
 observation, including non-Ubuntu Linux, musl, and Windows assets, but those are
 not manager-supported product install targets.
 
+## Source maintenance
+
+Product/runtime work remains paused. `just check` runs the existing static public
+contract validator, workflow audits and source secret checks without running the
+manager or using target/provider state. `just verify` also scans the retained Git
+history. This CI maintenance does not install, launch or release the product.
+
 ## Usage
 
 List the content setup and permission profiles:
